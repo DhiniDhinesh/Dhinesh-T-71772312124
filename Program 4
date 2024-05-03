@@ -1,0 +1,15 @@
+def calculate_portfolio_metrics(initial_cost, current_value, additional_cash_flow):
+    total_cost = initial_cost + additional_cash_flow
+    total_gain_loss = current_value - total_cost
+    percentage_profit_loss = (total_gain_loss / total_cost) * 100
+    
+    return total_cost, total_gain_loss, percentage_profit_loss
+initial_cost = 10000
+current_value = 12000
+additional_cash_flow = 2000
+
+total_cost, total_gain_loss, percentage_profit_loss = calculate_portfolio_metrics(initial_cost, current_value, additional_cash_flow)
+
+print("Total cost of the portfolio:", total_cost)
+print("Total amount gained or lost:", total_gain_loss)
+print("Percentage profit made or loss incurred:", percentage_profit_loss, "%")
