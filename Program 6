@@ -1,0 +1,16 @@
+names = ["Alice", "Bob", "Charlie"]
+roll_numbers = [101, 102, 103]
+marks = [85, 90, 95]
+student_info = list(zip(names, roll_numbers, marks))
+
+print("List of tuples containing name, roll number, and marks:")
+for info in student_info:
+    print(info)
+
+all_names = tuple(names)
+all_roll_numbers = tuple(roll_numbers)
+all_marks = tuple(marks)
+
+print("\nTuple containing all names:", all_names)
+print("Tuple containing all roll numbers:", all_roll_numbers)
+print("Tuple containing all marks:", all_marks)
