@@ -1,0 +1,6 @@
+Share_Name =input("Enter share name")
+Purchase_Date = input("Enter purchase Date")
+Cost_Price = input("Enter Cost price")
+Number_of_Shares = input("Number of Shares ")
+share_data = ("Share_Name", "Purchase_Date", Cost_Price, Number_of_Shares)
+print(share_data)
